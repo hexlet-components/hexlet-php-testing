@@ -6,17 +6,17 @@ use PHPUnit\Framework\TestCase;
 
 use function Hexlet\Phpunit\Utils\reverseString;
 
-// класс UtilsTest наследует класс TestCase
-// имя класса совпадает с именем файла
+// UtilsTest inherits TestCase
+// the class name and the file name are the same
 class UtilsTest extends TestCase
 {
-    // Метод, функция определенная внутри класса
-    // Должна начинаться со слова test
-    // public – чтобы PHPUnit мог вызвать этот тест снаружи
+    // The method, a function defined inside the class,
+    // must start with the 'test' word
+    // 'public' to enable PHPUnit to call this test outside
     public function testReverse(): void
     {
-        // Сначала идет ожидаемое значение (expected)
-        // И только потом актуальное (actual)
+        // expected value first
+        // then actual one
         $this->assertEquals('', reverseString(''));
         $this->assertEquals('olleh', reverseString('hello'));
     }
