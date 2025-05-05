@@ -15,11 +15,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Php\\Package\\": "src",
-      "Php\\Package\\Tests\\": "tests"
+      "Hexlet\\Package\\": "src",
+      "Hexlet\\Package\\Tests\\": "tests"
     },
     "files": [
-      "src/Utils.php"
+      "src/Utils.php",
+      "src/Math.php"
     ]
   },
   "require": {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Hexlet\Phpunit\Tests;
+namespace Hexlet\Package\Tests;
 
 use PHPUnit\Framework\TestCase;
 
-use function Hexlet\Phpunit\Utils\reverseString;
+use function Hexlet\Package\Utils\reverseString;
 
 // UtilsTest inherits TestCase
 // the class name and the file name are the same

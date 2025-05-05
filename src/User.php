@@ -1,6 +1,6 @@
 <?php
 
-namespace Php\Package;
+namespace Hexlet\Package;
 
 use Illuminate\Support\Collection;
 
