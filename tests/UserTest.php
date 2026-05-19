@@ -19,6 +19,7 @@ class UserTest extends TestCase
     }
 
     #[DataProvider('userDataProvider')]
+    /** @param array<int, User> $children */
     public function testGetName2(string $name, array $children): void
     {
         $user = new User($name, $children);
@@ -27,6 +28,7 @@ class UserTest extends TestCase
         $this->assertEquals(collect($children), $user->getChildren());
     }
 
+    /** @return array<string, array{string, array<int, User>}> */
     public static function userDataProvider(): array
     {
         return [

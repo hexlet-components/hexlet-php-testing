@@ -15,6 +15,7 @@ class MathTest extends TestCase
         $this->assertEquals($expected, cube($argument));
     }
 
+    /** @return array<int, array{int, int}> */
     public static function cubeProvider(): array
     {
         return [
