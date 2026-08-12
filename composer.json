@@ -1,45 +1,48 @@
 {
-  "name": "hexlet/php-package",
-  "bin": ["bin/php-package"],
-  "type": "library",
-  "authors": [
-    {
-      "name": "Kirill Mokevnin",
-      "email": "mokevnin@gmail.com"
-    }
-  ],
-  "description": "hexlet php-package",
-  "license": "MIT",
-  "scripts": {
-    "test": "phpunit tests"
-  },
-  "autoload": {
-    "psr-4": {
-      "Hexlet\\Package\\": "src",
-      "Hexlet\\Package\\Tests\\": "tests"
+    "name": "hexlet/php-package",
+    "bin": [
+        "bin/php-package"
+    ],
+    "type": "library",
+    "authors": [
+        {
+            "name": "Kirill Mokevnin",
+            "email": "mokevnin@gmail.com"
+        }
+    ],
+    "description": "hexlet php-package",
+    "license": "MIT",
+    "scripts": {
+        "test": "phpunit tests"
     },
-    "files": [
-      "src/Utils.php",
-      "src/Math.php"
-    ]
-  },
-  "require": {
-    "illuminate/collections": "^12 || ^13",
-    "nesbot/carbon": "^3.9",
-    "symfony/string": "^7.0 || ^8.0",
-    "phpstan/phpstan": "^2.1"
-  },
-  "require-dev": {
-    "psy/psysh": "^0.12",
-    "phpstan/phpstan-phpunit": "^2.0",
-    "phpstan/extension-installer": "^1.4",
-    "symfony/var-dumper": "^7.0 || ^8.0",
-    "phpunit/phpunit": "^12.0 || ^13.0",
-    "squizlabs/php_codesniffer": "^3.6 || ^4.0"
-  },
-  "config": {
-    "allow-plugins": {
-      "phpstan/extension-installer": true
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Package\\": "src",
+            "Hexlet\\Package\\Tests\\": "tests"
+        },
+        "files": [
+            "src/Utils.php",
+            "src/Math.php"
+        ]
+    },
+    "require": {
+        "php": ">=8.5",
+        "illuminate/collections": "^13",
+        "nesbot/carbon": "^3.9",
+        "symfony/string": "^8.0"
+    },
+    "require-dev": {
+        "phpstan/extension-installer": "^1.4",
+        "phpstan/phpstan": "^2.2",
+        "phpstan/phpstan-phpunit": "^2.0",
+        "phpunit/phpunit": "^13.3",
+        "psy/psysh": "^0.12",
+        "squizlabs/php_codesniffer": "^4.0",
+        "symfony/var-dumper": "^8.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        }
     }
-  }
 }

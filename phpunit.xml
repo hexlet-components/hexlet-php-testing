@@ -6,7 +6,7 @@
   stopOnFailure="true"
   bootstrap="vendor/autoload.php"
   xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/12.1/phpunit.xsd"
-  cacheResult="false"
+  recordTestRunHistory="false"
   backupStaticProperties="false">
   <source>
     <include>
