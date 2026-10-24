@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Hexlet\Package\Tests;
 
 use PHPUnit\Framework\TestCase;

@@ -32,17 +32,11 @@
         "symfony/string": "^8.0"
     },
     "require-dev": {
-        "phpstan/extension-installer": "^1.4",
-        "phpstan/phpstan": "^2.2",
-        "phpstan/phpstan-phpunit": "^2.0",
         "phpunit/phpunit": "^13.3",
         "psy/psysh": "^0.12",
-        "squizlabs/php_codesniffer": "^4.0",
         "symfony/var-dumper": "^8.0"
     },
     "config": {
-        "allow-plugins": {
-            "phpstan/extension-installer": true
-        }
+        "allow-plugins": {}
     }
 }

@@ -1,10 +1,12 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Hexlet\Package\Tests;
 
+use Hexlet\Package\User;
 use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
-use Hexlet\Package\User;
 
 class UserTest extends TestCase
 {

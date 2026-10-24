@@ -5,11 +5,11 @@ console:
 	composer exec --verbose psysh
 
 lint:
-	composer exec --verbose phpcs -- --standard=PSR12 src tests
-	composer exec --verbose phpstan -- --level=8 analyse src tests
+	mago lint
+	mago fmt --check
 
 lint-fix:
-	composer exec --verbose phpcbf -- --standard=PSR12 src tests
+	mago lint --fix --format-after-fix
 
 test:
 	composer exec --verbose phpunit tests
